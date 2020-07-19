@@ -1,0 +1,157 @@
+*{
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box;
+}
+.land-page{
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+	background: linear-gradient(50deg,rgba(0,0,0,.3),rgba(0,0,0,.5)), url(images/land-page.jpg);
+	background-size: cover;
+	background-position: center center;
+}
+.text{
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%,-30%);
+}
+#rotate{
+	font-size: 3.5rem;
+	color: #fff;
+}
+.rotater::before{
+		content: '';
+		color: #1FFF32;
+		font-weight: 600;
+		font-size: 4rem;
+		animation: anim 14s linear infinite;
+		transition: all .5s ease-in;
+}
+@keyframes anim {
+	0%{
+		content: 'Precious';
+	}
+	30%{
+		content: 'Money';
+	}
+	40%{
+		content: 'Wealth';
+	}
+	60%{
+		content: 'Value';
+	}
+	80%{
+		content: 'Power';
+	}
+	100%{
+		content: 'Everything';
+	}
+}
+#para1{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+	width: 100vw;
+	text-align: center;
+	color: #00FADD;
+	font-size: 3rem;
+	font-family: serif;
+}
+#para2{
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	transform: translate(-50%,-70%);
+	width: 100vw;
+	text-align: center;
+	color: #B3BDFF;
+	font-size: 2rem;
+	font-family: serif;
+}
+#para3{
+	position: absolute;
+	top: 83%;
+	left: 50%;
+	transform: translate(-50%,-83%);
+	width: 100vw;
+	text-align: center;
+	color: #fff;
+	font-size: 2rem;
+	font-family: serif;
+}
+#button{
+	position: absolute;
+	top: 98%;
+	left: 50%;
+	transform: translate(-50%,-98%);
+	width: 180px;
+	height: 50px;
+	text-align: center;
+	font-size: 2rem;
+	font-family: serif;
+	background: linear-gradient(45deg,rgba(122,127,255,.6),rgba(244,118,255,.6));
+	border-radius: 20px;
+	transition: all .3s ease-in;
+}
+#button a{
+	color: #000;
+	font-weight: 600;
+	text-decoration: none;
+}
+#button a i{
+	color: #fff;
+	text-decoration: none;
+	transition: all .3s ease-in;
+}
+#button:hover i{
+	transform: translateX(5px) scale(1.1);
+	color: #3BFB1B;
+}
+#button:hover{
+	box-shadow: 1px 1px 10px #0FFFF4;
+}
+@media (max-width: 500px){
+	.land-page{
+	background: linear-gradient(70deg,rgba(0,0,0,.6),rgba(0,0,0,.6)), url(images/w1.jpg);
+	background-size: cover;
+	background-position: center;
+    }
+	.text{
+	position: absolute;
+	top: 25%;
+	left: 50%;
+	transform: translate(-50%,-25%);
+	width: 80vw;
+	text-align: center;
+    }
+    #para1{
+	position: absolute;
+	top: 49%;
+	left: 50%;
+	transform: translate(-50%,-49%);
+	font-size: 2.8rem;
+    }
+    #para2{
+	position: absolute;
+	top: 67%;
+	left: 50%;
+	transform: translate(-50%,-67%);
+	font-size: 1.5rem;
+    }
+    #para3{
+	position: absolute;
+	top: 85%;
+	left: 50%;
+	transform: translate(-50%,-85%);
+	font-size: 1.9rem;
+    }
+    #button{
+	position: absolute;
+	top: 95%;
+	left: 50%;
+	transform: translate(-50%,-95%);
+    }
+}
