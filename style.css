@@ -7,7 +7,7 @@
 	width: 100vw;
 	height: 100vh;
 	overflow: hidden;
-	background: linear-gradient(50deg,rgba(0,0,0,.3),rgba(0,0,0,.5)), url(images/land-page.jpg);
+	background: linear-gradient(50deg,rgba(0,0,0,.3),rgba(0,0,0,.5)), url(land-page.jpg);
 	background-size: cover;
 	background-position: center center;
 }
@@ -26,7 +26,7 @@
 		color: #1FFF32;
 		font-weight: 600;
 		font-size: 4rem;
-		animation: anim 14s linear infinite;
+		animation: anim 12s linear infinite;
 		transition: all .5s ease-in;
 }
 @keyframes anim {
@@ -115,7 +115,7 @@
 }
 @media (max-width: 500px){
 	.land-page{
-	background: linear-gradient(70deg,rgba(0,0,0,.6),rgba(0,0,0,.6)), url(images/w1.jpg);
+	background: linear-gradient(70deg,rgba(0,0,0,.6),rgba(0,0,0,.6)), url(w1.jpg);
 	background-size: cover;
 	background-position: center;
     }
